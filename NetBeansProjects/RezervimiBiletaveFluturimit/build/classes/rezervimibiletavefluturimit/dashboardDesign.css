@@ -1,0 +1,201 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 28, 2023, 12:48:23 PM
+    Author     : kostika.tome
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width:0px .4px .8px .4px;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right,#841b1b, #808080);
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-text-fill:#fff;
+    -fx-font-size:15px;
+    -fx-cursor:hand;
+    -fx-font-family:"Arial";
+    -fx-alignment: CENTER_LEFT;
+} 
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#dd4763;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color:#ddd;
+}
+
+.logout-btn{
+    -fx-background-color:#5074d6;
+    -fx-background-radius:50px;
+    -fx-cursor:hand;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 2,0,0,0);
+}
+
+.logout-btn:hover{
+    -fx-background-color:#5e87ee;
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);
+}
+
+.card1{
+    -fx-background-color:linear-gradient(to right, #6b2f39, #a34747);
+    -fx-background-radius:8px;
+}
+
+.textfield{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-radius:10px 5px 10px 5px;
+    -fx-border-width:.8px;
+}
+.textfield:focused{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-border-width:1.8px;
+}
+
+.combobox{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-radius:10px 5px 10px 5px;
+    -fx-border-width:.8px;
+}
+.combobox:focused{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-border-width:1.8px;
+}
+
+.date{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-width:.8px;
+}
+.date:focused{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-border-width:1.8px;
+}
+
+.kerko-btn{
+    -fx-background-color:linear-gradient(to right, #6b2f39, #a34747);
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+.kerko-btn:hover{
+    -fx-background-color:#A52A2A;
+}
+
+.io-textfield{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+}
+
+.select-btn{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:10px 5px 10px 5px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-text-fill: #000;
+}
+.select-btn:hover{
+    -fx-background-color:#CCCCCC;
+}
+
+.io-reset-btn{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:10px 5px 10px 5px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-text-fill: #000;
+}
+.io-reset-btn:hover{
+    -fx-background-color:#CCCCCC;
+}
+
+.label-info{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-border-radius:15px 5px 15px 5px;
+    -fx-font-size:14px;
+    -fx-font-family:"Tahoma";
+    -fx-border-width:2px;
+    -fx-padding:0px 0px 0px 10px;
+}
+
+.search{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-radius:10px 5px 10px 5px;
+    -fx-border-width:.8px;
+    -fx-padding:0px 0px 0px 28px;
+}
+.search:focused{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-border-width:1.8px;
+}
+
+.table-view{
+    -fx-border-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-padding:0px;
+    -fx-border-radius:8px;
+    -fx-border-width:2px;
+}
+
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right, #6b2f39, #a34747);
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:50px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+}

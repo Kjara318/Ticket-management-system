@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlinebookingsystems.FXMLController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="414.0" prefWidth="302.0" styleClass="left-form" stylesheets="@loginDesign.css">
+               <children>
+                  <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="54.0" layoutY="46.0">
+                     <image>
+                        <Image url="@Albawings-Logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="98.0" layoutY="207.0" text="AlbaWings " textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="297.0" layoutY="6.0" prefHeight="407.0" prefWidth="302.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="297.6" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="88.0" layoutX="107.0" layoutY="42.0">
+                     <image>
+                        <Image url="@1077114.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="email" layoutX="62.0" layoutY="214.0" promptText="Email" />
+                  <PasswordField fx:id="password" layoutX="61.0" layoutY="263.0" promptText="Password" />
+                  <Button fx:id="close" layoutX="229.0" layoutY="17.0" mnemonicParsing="false" onAction="#close" styleClass="login-btn" stylesheets="@loginDesign.css" text="Close" />
+                  <Label layoutX="113.0" layoutY="161.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="login" layoutX="125.0" layoutY="314.0" mnemonicParsing="false" onAction="#login" onKeyTyped="#login" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Label layoutX="50.0" layoutY="354.0" prefHeight="14.0" prefWidth="124.0" text="Nese nuk ke nje llogari">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="gotoSignUp" layoutX="166.0" layoutY="350.0" mnemonicParsing="false" onAction="#gotoSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="#df1919">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+     
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlinebookingsystems.DashboardController">
+   <children>
+      <AnchorPane fx:id="dritarjaKryesore" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="58.0" prefWidth="1102.0" styleClass="semi-top-form" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-27.2" prefHeight="46.0" prefWidth="1130.0" styleClass="top-form" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="-28.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button layoutX="1058.0" layoutY="9.0" mnemonicParsing="false" onAction="#minimizoDritaren" prefHeight="26.0" prefWidth="31.0" styleClass="minimize" stylesheets="@dashboardDesign.css" text="-">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="1090.0" layoutY="9.0" mnemonicParsing="false" onAction="#mbyllFaqen" styleClass="close" stylesheets="@dashboardDesign.css" text="X" />
+                              <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="38.0" layoutY="10.0">
+                                 <image>
+                                    <Image url="@da73b79bf4ecf3d5fe87649436dd708a.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="84.0" layoutY="15.0" text="Sistemi i rezervimit të biletave" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="542.0" prefWidth="182.0" styleClass="nav-form" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="46.0" layoutY="158.0" text="Mirësevini" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="butoniDashboard" layoutX="28.0" layoutY="278.0" mnemonicParsing="false" onAction="#nderroFaqen" prefHeight="27.0" prefWidth="144.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Dashboard" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Label layoutX="53.0" layoutY="193.0" prefHeight="30.0" prefWidth="94.0" text="Përdorues" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="62.0" layoutY="246.0" startX="-43.59198760986328" startY="0.5929115414619446" stroke="WHITE" />
+                        <Button fx:id="butoniRezervimi" layoutX="27.0" layoutY="305.0" mnemonicParsing="false" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Rezervimi" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="butoniFluturimet" layoutX="27.0" layoutY="332.0" mnemonicParsing="false" onAction="#nderroFaqen" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Fluturimet tona" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="logout" layoutX="28.0" layoutY="469.0" mnemonicParsing="false" onAction="#dil" prefHeight="26.0" prefWidth="40.0" />
+                        <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="34.0" layoutY="470.0">
+                           <image>
+                              <Image url="@5072787.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="126.0" layoutX="32.0" layoutY="14.0">
+                           <image>
+                              <Image url="@61f75ea9a680def2ed1c6929fe75aeee.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="formular1" layoutX="110.0" layoutY="98.0" prefHeight="541.6" prefWidth="918.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="9.0" prefHeight="133.0" prefWidth="906.0" stylesheets="@dashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="54.0" layoutY="10.0" prefHeight="133.6" prefWidth="906.4" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="nav-form" />
+                                          <String fx:value="card1" />
+                                       </styleClass>
+                                       <children>
+                                          <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="133.0" layoutY="46.0">
+                                             <image>
+                                                <Image url="@da73b79bf4ecf3d5fe87649436dd708a.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="208.0" layoutY="39.0" prefHeight="54.0" prefWidth="692.0" text="Përshëndetje, ku dëshiron të shkosh?">
+                                             <font>
+                                                <Font name="Berlin Sans FB" size="36.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="9.0" layoutY="143.0" prefHeight="393.0" prefWidth="898.0" stylesheets="@dashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                    <ComboBox fx:id="vendiNisjesField" layoutX="173.0" layoutY="47.0" prefHeight="45.0" prefWidth="190.0" promptText="Nga" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <ComboBox fx:id="vendiMberritjesField" disable="true" layoutX="477.0" layoutY="47.0" prefHeight="45.0" prefWidth="190.0" promptText="Në" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="398.0" layoutY="51.0">
+                                       <image>
+                                          <Image url="@64496.png" />
+                                       </image>
+                                    </ImageView>
+                                    <RadioButton fx:id="vajtjeardhjeradio" layoutX="225.0" layoutY="121.0" mnemonicParsing="false" text="Vajtje-ardhje" />
+                                    <RadioButton fx:id="njedrejtimradio" layoutX="500.0" layoutY="121.0" mnemonicParsing="false" text="Një-drejtim" />
+                                    <Label layoutX="151.0" layoutY="181.0" text="Klasi">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="klasicombo" layoutX="310.0" layoutY="183.0" prefWidth="150.0" promptText="Zgjidh" styleClass="combobox" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="149.0" layoutY="248.0" prefHeight="30.0" prefWidth="48.0" text="Data">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="dataNisjes" layoutX="310.0" layoutY="250.0" promptText="MM-DD-YYYY" styleClass="date" stylesheets="@dashboardDesign.css" />
+                                    <DatePicker fx:id="dataMberritjes" layoutX="509.0" layoutY="250.0" promptText="MM-DD-YYYY" styleClass="date" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="149.0" layoutY="304.0" text="Pasagjerë">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="pasagjerecombo" layoutX="310.0" layoutY="306.0" prefWidth="150.0" promptText="Zgjidh" styleClass="combobox" stylesheets="@dashboardDesign.css" />
+                                    <Button fx:id="butoniKerko" layoutX="785.0" layoutY="333.0" mnemonicParsing="false" onAction="#nderroFaqen" prefHeight="33.0" prefWidth="71.0" styleClass="kerko-btn" stylesheets="@dashboardDesign.css" text="Kërko">
+                                       <font>
+                                          <Font name="System Bold" size="22.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="faqjaFluturimet" prefHeight="541.6" prefWidth="917.6" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="64.0" layoutY="52.0" prefHeight="541.6" prefWidth="917.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="22.0" layoutY="14.0" prefHeight="517.0" prefWidth="878.0">
+                                       <children>
+                                          <TableView fx:id="tabelaFluturimeve" layoutX="12.0" layoutY="65.0" prefHeight="444.0" prefWidth="844.0" stylesheets="@dashboardDesign.css">
+                                            <columns>
+                                              <TableColumn fx:id="idFluturimit" prefWidth="120.0" text="ID e fluturimit" />
+                                              <TableColumn fx:id="vendiNisjes" prefWidth="120.0" text="Nisja" />
+                                                <TableColumn fx:id="vendiMberritjes" prefWidth="120.0" text="Mbërritja" />
+                                                <TableColumn fx:id="oraNisjes" prefWidth="129.0" text="Ora e nisjes" />
+                                                <TableColumn fx:id="oraMberritjes" prefWidth="120.0" text="Ora e mbërritjes" />
+                                                <TableColumn fx:id="CmimiEko" prefWidth="120.0" text="Çmimi i klasit&#10;ekonomik (€)" />
+                                                <TableColumn fx:id="CmimiPare" prefWidth="120.0" text="Çmimi i klasit&#10;  të parë (€)" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="kerkoFluturimi" layoutX="14.0" layoutY="21.0" onKeyTyped="#kerkoFluturime" prefHeight="32.0" prefWidth="232.0" promptText="Kërko" styleClass="search" stylesheets="@dashboardDesign.css" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="formularPjesa1" layoutX="14.0" layoutY="14.0" prefHeight="171.0" prefWidth="887.0" stylesheets="@dashboardDesign.css" visible="false">
+                           <styleClass>
+                              <String fx:value="card1" />
+                              <String fx:value="white-bg" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="37.0" layoutY="14.0" prefHeight="42.0" prefWidth="281.0" text="Të dhënat personale" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="69.0" text="Emri" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="emriInput" layoutX="122.0" layoutY="67.0" styleClass="io-textfield" stylesheets="@dashboardDesign.css" />
+                              <Label layoutX="37.0" layoutY="118.0" text="Mbiemri" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="mbiemriInput" layoutX="122.0" layoutY="116.0" styleClass="io-textfield" stylesheets="@dashboardDesign.css" />
+                              <Label layoutX="321.0" layoutY="68.0" text="Gjinia" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="321.0" layoutY="118.0" text="Numri i telefonit" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="gjiniaInput" layoutX="444.0" layoutY="68.0" onAction="#gjiniaList" prefWidth="150.0" styleClass="io-textfield" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="nrTelefonitInput" layoutX="444.0" layoutY="116.0" styleClass="io-textfield" stylesheets="@dashboardDesign.css" />
+                              <Button fx:id="butoniPastro" layoutX="748.0" layoutY="129.0" mnemonicParsing="false" onAction="#pastroFushat" styleClass="io-reset-btn" stylesheets="@dashboardDesign.css" text="Pastro" />
+                              <Button fx:id="butoniVazhdo" layoutX="812.0" layoutY="129.0" mnemonicParsing="false" onAction="#informacionPerdoruesit" styleClass="select-btn" stylesheets="@dashboardDesign.css" text="Vazhdo" />
+                              <Label layoutX="637.0" layoutY="68.0" text="Bagazhe" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="bagazheInput" layoutX="709.0" layoutY="68.0" onAction="#bagazheList" prefWidth="150.0" styleClass="io-textfield" stylesheets="@dashboardDesign.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="formularPjesa2" layoutX="14.0" layoutY="194.0" prefHeight="336.0" prefWidth="889.0" stylesheets="@dashboardDesign.css" visible="false">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="white-bg" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="109.0" text="Fatura">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="62.0" layoutY="60.0" text="Emri" AnchorPane.topAnchor="60.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="61.0" layoutY="100.0" text="Mbiemri" AnchorPane.topAnchor="100.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="58.0" layoutY="140.0" text="Gjinia" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="61.0" layoutY="206.0" text="Numri i telefonit" AnchorPane.topAnchor="180.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="61.0" layoutY="251.0" text="Data" AnchorPane.topAnchor="220.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="413.0" layoutY="60.0" text="Vendi i nisjes" AnchorPane.topAnchor="60.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="413.0" layoutY="100.0" text="Vendi i mbërritjes" AnchorPane.topAnchor="100.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="414.0" layoutY="140.0" text="Klasi" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="413.0" layoutY="180.0" text="Bagazhe" AnchorPane.topAnchor="180.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="410.0" layoutY="220.0" text="#Bileta" AnchorPane.topAnchor="220.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="emriLabel" editable="false" layoutX="201.0" layoutY="59.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="mbiemriLabel" editable="false" layoutX="201.0" layoutY="99.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="gjiniaLabel" editable="false" layoutX="201.0" layoutY="139.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="nrTelefonitLabel" editable="false" layoutX="201.0" layoutY="179.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="dataLabel" editable="false" layoutX="201.0" layoutY="219.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="vendiNisjesLabel" editable="false" layoutX="596.0" layoutY="57.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="vendiMberrijesLabel" editable="false" layoutX="596.0" layoutY="99.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="klasiLabel" editable="false" layoutX="596.0" layoutY="139.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="bagazheLabel" editable="false" layoutX="596.0" layoutY="179.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <TextField fx:id="biletaLabel" editable="false" layoutX="596.0" layoutY="219.0" styleClass="label-info" stylesheets="@dashboardDesign.css" />
+                              <Label layoutX="190.0" layoutY="266.0" prefHeight="42.0" prefWidth="109.0" text="Totali:">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="cmimiBiletesLabel" layoutX="257.0" layoutY="266.0" prefHeight="42.0" prefWidth="109.0" text="€0.0">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="butoniPaguaj" layoutX="783.0" layoutY="285.0" mnemonicParsing="false" onAction="#pagesaSukses" styleClass="kerko-btn" stylesheets="@dashboardDesign.css" text="Paguaj" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
